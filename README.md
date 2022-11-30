@@ -1,8 +1,6 @@
-# ![](/home/pedro/Imagens/light.png)
+# ![](telas/light.png)
 
-![](/home/pedro/Imagens/dark.png)
-
-
+![](telas/dark.png)
 
 # Getting Started with Create React App
 
