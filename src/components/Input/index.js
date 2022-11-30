@@ -1,12 +1,29 @@
+import { InputContainer, InputContainerSub, IToogle} from './styles'
 
-import { InputContainer } from './styles';
+export const Input = ({value = '0'}) => {
+    return (<>
+        <InputContainer>
+            <input disabled value={value}/>
+        </InputContainer>
+        </>
+    )
+}
 
-const Input = ({value}) => {
-    return (
-      <InputContainer>
-       <input disabled value={value}/>
-      </InputContainer>
-    );
-  }
-  
-  export default Input;
+export const InputSub = ({value}) => {
+    return (<>
+        <InputContainerSub>
+            <input disabled value={value}/>
+        </InputContainerSub>
+        </>
+    )
+}
+
+export const InputToogle = ({onClick}) => {
+    return (<>
+        <IToogle>
+            <input type="checkbox" id="switch" onClick={onClick}/>
+            <label for="switch"/>
+        </IToogle>
+        </>
+    )
+}
